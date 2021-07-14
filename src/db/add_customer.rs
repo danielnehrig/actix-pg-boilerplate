@@ -13,9 +13,7 @@ pub async fn add_customer(client: &Client, user_info: Customer) -> Result<Custom
             &[
                 &user_info.first_name,
                 &user_info.last_name,
-                &user_info.is_eav_customer,
-                &user_info.is_redpoints_sub,
-                &user_info.has_newsletter_sub
+                &user_info.has_newsletter_sub,
             ],
         )
         .await?
